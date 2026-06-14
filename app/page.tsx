@@ -1,6 +1,7 @@
 import { Header } from '@/components/header'
 import { FilterPills } from '@/components/filter-pills'
 import { ProductCard } from '@/components/product-card'
+import { NavTabs } from '@/components/nav-tabs'
 
 const products = [
   {
@@ -70,6 +71,7 @@ const products = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
+      <NavTabs />
       <Header />
       <FilterPills />
 
