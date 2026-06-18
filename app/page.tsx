@@ -8,8 +8,10 @@ const products = [
     crop: 'Tomatoes',
     cooperative: 'Minna Cooperative',
     location: 'Minna, Niger State',
-    price: 15500, quantity: 20, unit: 'basket',
-    image: 'https://images.unsplash.com/photo-1546630392-db5b1f04874a?w=400',
+    price: 15500,
+    quantity: 20,
+    unit: 'basket',
+    image: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=400',
     badge: { type: 'verified' as const, text: 'Cooperative Verified' },
   },
   {
@@ -17,15 +19,19 @@ const products = [
     crop: 'Maize',
     cooperative: 'Suleja Farmers Co-op',
     location: 'Suleja, Niger State',
-    price: 8200, quantity: 50, unit: 'bag',
-    image: 'https://images.unsplash.com/photo-1601593346740-925612772716?w=400',
+    price: 8200,
+    quantity: 50,
+    unit: 'bag',
+    image: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=400',
   },
   {
     id: 3,
     crop: 'Potato',
     cooperative: 'Bida Agricultural Co-op',
     location: 'Bida, Niger State',
-    price: 12000, quantity: 15, unit: 'bag',
+    price: 12000,
+    quantity: 15,
+    unit: 'bag',
     image: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400',
   },
   {
@@ -33,7 +39,9 @@ const products = [
     crop: 'Spinach',
     cooperative: 'Lapai Growers Co-op',
     location: 'Lapai, Niger State',
-    price: 3500, quantity: 40, unit: 'bundle',
+    price: 3500,
+    quantity: 40,
+    unit: 'bundle',
     image: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=400',
   },
   {
@@ -41,7 +49,9 @@ const products = [
     crop: 'Onions',
     cooperative: 'Kontagora Co-op',
     location: 'Kontagora, Niger State',
-    price: 9800, quantity: 30, unit: 'bag',
+    price: 9800,
+    quantity: 30,
+    unit: 'bag',
     image: 'https://images.unsplash.com/photo-1508747703725-719777637510?w=400',
   },
   {
@@ -49,8 +59,10 @@ const products = [
     crop: 'Tomatoes',
     cooperative: 'Agaie Farmers Co-op',
     location: 'Agaie, Niger State',
-    price: 14800, quantity: 8, unit: 'basket',
-    image: 'https://images.unsplash.com/photo-1524593166156-312f362cada0?w=400',
+    price: 14800,
+    quantity: 8,
+    unit: 'basket',
+    image: 'https://images.unsplash.com/photo-1546094096-0df4bcaaa337?w=400',
     badge: { type: 'low-stock' as const, text: 'Low Stock' },
   },
   {
@@ -58,8 +70,10 @@ const products = [
     crop: 'Pepper',
     cooperative: 'Chanchaga Farmers Co-op',
     location: 'Chanchaga, Niger State',
-    price: 6500, quantity: 25, unit: 'bag',
-    image: 'https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?w=400',
+    price: 6500,
+    quantity: 25,
+    unit: 'bag',
+    image: 'https://images.unsplash.com/photo-1588252303782-cb80119abd6d?w=400',
     badge: { type: 'verified' as const, text: 'Cooperative Verified' },
   },
   {
@@ -67,18 +81,23 @@ const products = [
     crop: 'Cassava',
     cooperative: 'Mokwa Agricultural Co-op',
     location: 'Mokwa, Niger State',
-    price: 4200, quantity: 60, unit: 'bag',
-    image: 'https://images.unsplash.com/photo-1637258438975-e48b3bc6e806?w=400',
+    price: 4200,
+    quantity: 60,
+    unit: 'bag',
+    image: 'https://images.unsplash.com/photo-1559181567-c3190958d3b4?w=400',
   },
   {
     id: 9,
     crop: 'Groundnut',
     cooperative: 'Borgu Farmers Co-op',
     location: 'Borgu, Niger State',
-    price: 11000, quantity: 18, unit: 'bag',
+    price: 11000,
+    quantity: 18,
+    unit: 'bag',
     image: 'https://images.unsplash.com/photo-1567375698348-5d9d5ae99de0?w=400',
   },
 ]
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
@@ -107,7 +126,7 @@ export default function Home() {
           <span>·</span>
           <span>Tomatoes ₦15,500/basket</span>
           <span>·</span>
-          <span>Yam ₦12,000/crate</span>
+          <span>Potato ₦12,000/bag</span>
           <span>·</span>
           <span>Onions ₦9,800/bag</span>
           <span>·</span>
@@ -118,7 +137,9 @@ export default function Home() {
       {/* Products Grid */}
       <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between mb-6">
-          <h3 className="text-lg font-bold text-gray-900">Available Produce <span className="text-gray-400 font-normal text-base">({products.length} listings)</span></h3>
+          <h3 className="text-lg font-bold text-gray-900">
+            Available Produce <span className="text-gray-400 font-normal text-base">({products.length} listings)</span>
+          </h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product) => (
@@ -136,8 +157,8 @@ export default function Home() {
           <p className="font-bold text-gray-700 text-base mb-1">Okave</p>
           <p>Connecting Nigerian farmers with buyers · Verified Cooperatives · Fair Prices</p>
           <div className="flex justify-center gap-6 mt-4 text-green-700 font-medium">
-            <a href="/login">Agent Portal</a>
-            <a href="/login">Admin Dashboard</a>
+            <a href="/agent">Agent Portal</a>
+            <a href="/admin">Admin Dashboard</a>
             <a href="/register">Join as Buyer</a>
           </div>
         </div>
