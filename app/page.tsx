@@ -84,11 +84,11 @@ const products = [
     price: 4200,
     quantity: 60,
     unit: 'bag',
-    image: 'https://images.unsplash.com/photo-1637258438975-e48b3bc6e806?w=400',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Cassava_tapioca.jpg/640px-Cassava_tapioca.jpg,
   },
   {
     id: 9,
-    crop: 'Groundnut',
+    crop: 'Carrot',
     cooperative: 'Borgu Farmers Co-op',
     location: 'Borgu, Niger State',
     price: 11000,
