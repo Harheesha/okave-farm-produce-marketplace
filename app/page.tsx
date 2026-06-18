@@ -32,7 +32,7 @@ const products = [
     price: 12000,
     quantity: 15,
     unit: 'tuber crate',
-    image: 'https://images.unsplash.com/photo-1561862774-0b7d4eeb04e3?w=400',
+    image: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400',
   },
   {
     id: 4,
