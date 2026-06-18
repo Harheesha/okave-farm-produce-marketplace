@@ -84,7 +84,7 @@ const products = [
     price: 4200,
     quantity: 60,
     unit: 'bag',
-    image: 'https://images.unsplash.com/photo-1559181567-c3190958d3b4?w=400',
+    image: 'https://images.unsplash.com/photo-1637258438975-e48b3bc6e806?w=400',
   },
   {
     id: 9,
@@ -94,7 +94,7 @@ const products = [
     price: 11000,
     quantity: 18,
     unit: 'bag',
-    image: 'https://images.unsplash.com/photo-1567375698348-5d9d5ae99de0?w=400',
+    image: 'https://images.unsplash.com/photo-1590868309235-ea34bed7bd7f?w=400',
   },
 ]
 
