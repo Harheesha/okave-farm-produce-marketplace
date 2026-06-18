@@ -26,12 +26,12 @@ const products = [
   },
   {
     id: 3,
-    crop: 'Yam',
+    crop: 'Potato',
     cooperative: 'Bida Agricultural Co-op',
     location: 'Bida, Niger State',
     price: 12000,
     quantity: 15,
-    unit: 'tuber crate',
+    unit: 'bag',
     image: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400',
   },
   {
